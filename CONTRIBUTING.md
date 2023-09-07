@@ -1,6 +1,6 @@
 # How to develop on this project
 
-ids706_python_template welcomes contributions from the community.
+hugohu_pandas_package welcomes contributions from the community.
 
 **You need PYTHON3!**
 

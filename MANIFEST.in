@@ -1,4 +1,4 @@
 include LICENSE
 include HISTORY.md
 graft tests
-graft ids706_python_template
+graft hugohu_pandas_package

@@ -1,7 +1,7 @@
 """
-ids706_python_template base module.
+hugohu_pandas_package base module.
 
-This is the principal module of the ids706_python_template project.
+This is the principal module of the hugohu_pandas_package project.
 here you put your main classes and objects.
 
 Be creative! do whatever you want!

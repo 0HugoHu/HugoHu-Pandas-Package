@@ -6,7 +6,7 @@ from hugohu_pandas_package.cli import filter_data
 
 
 def test_base():
-    assert NAME == "ids706_python_template"
+    assert NAME == "hugohu_pandas_package"
 
 
 class TestFilterData(unittest.TestCase):

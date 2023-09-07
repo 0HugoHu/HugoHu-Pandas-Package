@@ -1,4 +1,4 @@
-"""Entry point for ids706_python_template."""
+"""Entry point for hugohu_pandas_package."""
 
 from hugohu_pandas_package.cli import main  # pragma: no cover
 

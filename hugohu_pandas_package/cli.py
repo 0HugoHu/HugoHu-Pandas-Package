@@ -1,4 +1,4 @@
-"""CLI interface for ids706_python_template project.
+"""CLI interface for hugohu_pandas_package project.
 
 Be creative! do whatever you want!
 
@@ -29,7 +29,7 @@ def filter_data(input_file):
 def main():  # pragma: no cover
     """
     The main function executes on commands:
-    `python -m hugohu_pandas_package` and `$ ids706_python_template `.
+    `python -m hugohu_pandas_package` and `$ hugohu_pandas_package `.
     """
 
     filtered_df = filter_data('data/data.csv')

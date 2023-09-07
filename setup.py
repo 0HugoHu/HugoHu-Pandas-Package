@@ -1,4 +1,4 @@
-"""Python setup.py for ids706_python_template package"""
+"""Python setup.py for hugohu_pandas_package package"""
 import io
 import os
 from setuptools import find_packages, setup
@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely.
-    >>> read("ids706_python_template", "VERSION")
+    >>> read("hugohu_pandas_package", "VERSION")
     '0.1.0'
     >>> read("README.md")
     ...
@@ -30,17 +30,17 @@ def read_requirements(path):
 
 
 setup(
-    name="ids706_python_template",
-    version=read("ids706_python_template", "VERSION"),
-    description="Awesome ids706_python_template created by 0HugoHu",
-    url="https://github.com/0hugohu/IDS706-Python-Template/",
+    name="hugohu_pandas_package",
+    version=read("hugohu_pandas_package", "VERSION"),
+    description="Awesome hugohu_pandas_package created by 0HugoHu",
+    url="https://github.com/nogibjj/HugoHu-Pandas-Package",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="Hugo Hu",
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
-        "console_scripts": ["ids706_python_template = ids706_python_template.__main__:main"]
+        "console_scripts": ["hugohu_pandas_package = hugohu_pandas_package.__main__:main"]
     },
     extras_require={"test": read_requirements("requirements-test.txt")},
 )

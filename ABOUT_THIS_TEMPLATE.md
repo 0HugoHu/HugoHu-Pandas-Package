@@ -19,7 +19,7 @@ Some decisions I have made while creating this template are:
 Lets take a look at the structure of this template:
 
 ```text
-├── Dockerfile            # The file to build a container using buildah or docker
+├── Dockerfile               # The file to build a container using buildah or docker
 ├── CONTRIBUTING.md          # Onboarding instructions for new contributors
 ├── .github                  # Github metadata for repository
 │   ├── release_message.sh   # A script to generate a release message
@@ -29,7 +29,7 @@ Lets take a look at the structure of this template:
 ├── LICENSE                  # The license for the project
 ├── Makefile                 # A collection of utilities to manage the project
 ├── MANIFEST.in              # A list of files to include in a package
-├── ids706_python_template             # The main python package for the project
+├── hugohu_pandas_package          # The main python package for the project
 │   ├── base.py              # The base module for the project
 │   ├── __init__.py          # This tells Python that this is a package
 │   ├── __main__.py          # The entry point for the project
@@ -106,7 +106,7 @@ I had to do some tricks to read that version variable inside the setuptools
 I decided to keep the version in a static file because it is easier to read from
 wherever I want without the need to install the package.
 
-e.g: `cat ids706_python_template/VERSION` will get the project version without harming
+e.g: `cat hugohu_pandas_package/VERSION` will get the project version without harming
 with module imports or anything else, it is useful for CI, logs and debugging.
 
 ### Why to include `tests`, `history` and `Containerfile` as part of the release?
