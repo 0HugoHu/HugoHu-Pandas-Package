@@ -27,14 +27,14 @@ install:          ## Install the project in dev mode.
 .PHONY: fmt
 fmt:              ## Format code using black & isort.
 	$(ENV_PREFIX)isort hugohu_pandas_package/
-	$(ENV_PREFIX)black -l 79 hugohu_pandas_package/
-	$(ENV_PREFIX)black -l 79 tests/
+	$(ENV_PREFIX)black -l 84 hugohu_pandas_package/
+	$(ENV_PREFIX)black -l 84 tests/
 
 .PHONY: lint
 lint:             ## Run pep8, black, mypy linters.
 	$(ENV_PREFIX)flake8 hugohu_pandas_package/
-	$(ENV_PREFIX)black -l 79 --check hugohu_pandas_package/
-	$(ENV_PREFIX)black -l 79 --check tests/
+	$(ENV_PREFIX)black -l 84 --check hugohu_pandas_package/
+	$(ENV_PREFIX)black -l 84 --check tests/
 	$(ENV_PREFIX)mypy --ignore-missing-imports hugohu_pandas_package/
 
 .PHONY: test
