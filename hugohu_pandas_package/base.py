@@ -14,4 +14,6 @@ and then choose `flask` as template.
 """
 
 # example constant variable
-NAME = "ids706_python_template"
+NAME = "hugohu_pandas_package"
+
+import pandas as pd

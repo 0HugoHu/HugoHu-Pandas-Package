@@ -14,17 +14,15 @@ WORKDIR /app
 
 # Copy your project files into the container
 COPY requirements.txt Makefile ./
-COPY ./ids706_python_template /app/ids706_python_template
+COPY ./hugohu_pandas_package /app/hugohu_pandas_package
+COPY ./data /app/data
 
-# Create a virtual environment and install dependencies
-RUN python -m venv venv \
-   && . venv/bin/activate \
-   && pip install --disable-pip-version-check --no-cache-dir -r requirements.txt \
-   && deactivate \
-   && rm -rf venv requirements.txt
+# Install dependencies
+# Do not care about the warning message as this is running in the docker container
+RUN pip install --disable-pip-version-check --no-cache-dir -r requirements.txt
 
 # Switch to the non-root user (optional but recommended)
 USER ${USER}
 
 # Specify the command to run your application
-CMD ["python", "-m", "ids706_python_template"]
+CMD ["python", "-m", "hugohu_pandas_package"]
