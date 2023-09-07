@@ -34,4 +34,3 @@ def main():  # pragma: no cover
 
     filtered_df = filter_data('data/data.csv')
     print(filtered_df)
-
