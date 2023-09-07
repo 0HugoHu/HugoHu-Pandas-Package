@@ -15,5 +15,3 @@ and then choose `flask` as template.
 
 # example constant variable
 NAME = "hugohu_pandas_package"
-
-import pandas as pd

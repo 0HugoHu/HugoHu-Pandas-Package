@@ -1,5 +1,6 @@
-from hugohu_pandas_package.base import NAME, pd
+from hugohu_pandas_package.base import NAME
 
+import pandas as pd
 import unittest
 from unittest.mock import patch
 from hugohu_pandas_package.cli import filter_data

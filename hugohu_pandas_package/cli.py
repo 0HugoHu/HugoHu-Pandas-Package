@@ -8,7 +8,7 @@ Be creative! do whatever you want!
 - Import things from your .base module
 """
 
-from hugohu_pandas_package.base import pd
+import pandas as pd
 
 
 def filter_data(input_file):
